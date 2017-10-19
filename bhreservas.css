@@ -1,0 +1,44 @@
+#header {
+  background-color: grey;
+  /*-width: 1200px;*/
+  height: 90px;
+	/*background: url(../imagenes/cabecera.jpg);*/
+	background-repeat: repeat;
+}
+
+#logo {
+  float: left;
+  padding: 25px 0 0 20px;
+	text-decoration: none;
+  /*background-image: url(logo.png);*/
+}
+
+#barra {
+	float: right;
+}
+
+#barra ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 30px;
+}
+	
+#barra ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+#barra ul li a {
+  display: block;
+  padding: 0 30px;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#barra ul li a:hover {
+  background: #0b76a6;
+  height: 90px;
+}
