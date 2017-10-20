@@ -2,4 +2,4 @@
 
 ## Enlace a la página (Heroku):
 
-* https://tranquil-sands-40299.herokuapp.com/
+* [Heroku](https://bh-reservas.herokuapp.com/)
