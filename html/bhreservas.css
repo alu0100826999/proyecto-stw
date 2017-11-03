@@ -42,3 +42,13 @@
   background: #0b76a6;
   height: 90px;
 }
+
+#bhinicio{
+  width:100%
+}
+
+.seccion{
+  text-align: center;
+  font-size: 1.5em;
+  color: #2A0A22;
+}
