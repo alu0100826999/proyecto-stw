@@ -17,3 +17,5 @@
 4. Para actualizar la aplicación es necesario hacer:
  git add ., git commit -m "", git push heroku master.
 
+### Para traerte una rama de github a local que no tienes creada:
+* git checkout --track -b nombre-que-le-quieres-poner-a-la-rama origin/nombre-rama-en-github
