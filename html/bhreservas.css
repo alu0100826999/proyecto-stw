@@ -1,3 +1,7 @@
+body {
+  font-family: serif;
+}
+
 #header {
   background-color: grey;
   /*-width: 1200px;*/
@@ -51,4 +55,44 @@
   text-align: center;
   font-size: 1.5em;
   color: #2A0A22;
+}
+
+.content-box {
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #d8ecf7;
+  border: 1px solid #afcde3;
+  text-align: center;
+  /*margin: 0 0 25px;*/
+  margin-left: 40%;
+  position: absolute;
+}
+
+#form {
+  width: auto;
+  /*text-align: center;*/
+}
+
+#titulo {
+  font-size: 30px;
+}
+
+hr {
+  width: 30%;
+  background-color: black;
+}
+
+.boton2, .boton1{	
+  margin: 28px 20px;
+  background-color:#EBEBEB;
+  text-align: center;
+  width:75px;
+  height:28px;
+  color: grey;
+}
+
+#enlace-registro {
+  font-size: 0.9em;
 }
