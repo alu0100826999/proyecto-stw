@@ -4,10 +4,13 @@ body {
 
 #header {
   background-color: grey;
-  /*-width: 1200px;*/
   height: 90px;
 	/*background: url(../imagenes/cabecera.jpg);*/
 	background-repeat: repeat;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
 }
 
 #logo {
@@ -80,7 +83,7 @@ body {
 }
 
 hr {
-  width: 30%;
+  width: 100%;
   background-color: black;
 }
 
