@@ -1,6 +1,6 @@
 var express = require('express')
 var app = express()
-var path = require ('path');
+var path = require ('path')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./html'));
 
 app.get('/', function (req, res) {
-res.render('index', {title: 'Express'});
+res.render('index.html', {title: 'Express'});
 })
 
 var server = app.listen(process.env.PORT || 8080, function () {

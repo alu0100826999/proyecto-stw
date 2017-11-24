@@ -1,0 +1,93 @@
+
+img{
+  width: 100%;
+}
+
+div.deportes{
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+div.deportes > div{
+  height:350px;
+  width:350px;
+  background-size: cover;
+  margin: 10px;
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  flex-wrap:wrap;
+  
+}
+
+div#baloncesto{
+  background-image: url("../img/baloncesto.jpg");
+}
+div#padel{
+  background-image: url("../img/padel.jpg");
+}
+div#squash{
+  background-image: url("../img/squash.jpg");
+}
+div#pingpong{
+  background-image: url("../img/pingpong.jpg");
+}
+div#futbol{
+  background-image: url("../img/futbol.jpg");
+}
+div#tenis{
+  background-image: url("../img/tenis.jpg");
+}
+
+div.info{
+  height:350px;
+  width:350px;
+  background: #2A0A22;
+  color: white;
+  font-size:50px;
+  text-align:center;
+  visibility:hidden;
+  filter:opacity(0.8);
+  /*transition: all 0.5s ease 0.5s;*/
+}
+
+
+div#baloncesto:hover div.info{
+  visibility:visible;
+}
+div#padel:hover div.info{
+  visibility:visible;
+}
+div#squash:hover div.info{
+  visibility:visible;
+}
+div#pingpong:hover div.info{
+  visibility:visible;
+}
+div#futbol:hover div.info{
+  visibility:visible;
+}
+div#tenis:hover div.info{
+  visibility:visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background:#2c3e50;
+	color:#fff;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	margin-top:1%;
+
+}
