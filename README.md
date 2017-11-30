@@ -3,8 +3,6 @@
 ## Enlace a la página (Heroku):
 
 * [Heroku](https://bh-reservas.herokuapp.com/)
-<<<<<<< HEAD
-=======
 
 ## TUTORIAL
 
@@ -21,4 +19,3 @@
 
 ### Para traerte una rama de github a local que no tienes creada:
 * git checkout --track -b nombre-que-le-quieres-poner-a-la-rama origin/nombre-rama-en-github
->>>>>>> 8b769a041234ae79bd35dbf22c3b10c9658adb4c
