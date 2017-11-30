@@ -5,7 +5,7 @@ var path = require ('path')
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(express.static('./html'));
+app.use(express.static('./pagina_web'));
 
 app.get('/', function (req, res) {
 res.render('index.html', {title: 'Express'});
