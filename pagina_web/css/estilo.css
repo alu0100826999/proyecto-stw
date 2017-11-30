@@ -3,6 +3,14 @@ img{
   width: 100%;
 }
 
+#header {
+  background-repeat: repeat;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
 div.deportes{
   display:flex;
   justify-content:center;
@@ -73,15 +81,41 @@ div#tenis:hover div.info{
   visibility:visible;
 }
 
+.content-box {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #d8ecf7;
+  border: 1px solid #afcde3;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 40%;
+  position: relative;
+}
 
+#form {
+  width: auto;
+  /*text-align: center;*/
+}
 
+#titulo {
+  font-size: 30px;
+}
 
+hr {
+  width: 100%;
+  background-color: black;
+}
 
-
-
-
-
-
+.boton2, .boton1{ 
+  margin: 28px 20px;
+  background-color:#EBEBEB;
+  text-align: center;
+  width:75px;
+  height:28px;
+  color: grey;
+}
 
 footer{
 	background:#2c3e50;

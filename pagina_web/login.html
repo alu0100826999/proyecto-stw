@@ -16,13 +16,11 @@
     <link rel="stylesheet" href="css/estilo.css">
   </head>
   
-
   <body>
-    
   
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header"> 
       <div class="navbar-header">
-      <a class="navbar-brand" href="#">BH-RESERVAS</a>
+        <a class="navbar-brand" href="#">BH-RESERVAS</a>
       </div>
         <!--<div class="collapse navbar-collapse">-->
           
@@ -30,65 +28,37 @@
             <ul class="navbar-nav"> <!-- mr-auto mt-2 mt-lg-0 --> 
                 
                 <li class="nav-item active">
-                <a class="nav-link" href="#reservas"> Reserva tu cancha</a>
+                  <a class="nav-link" href="#reservas"> Reserva tu cancha</a>
                 </li>
                
                 <li class="nav-item active">
-                <a class="nav-link" href="#contacto"> Contacto</a>
+                  <a class="nav-link" href="#contacto"> Contacto</a>
                 </li>
 
-            </ul>
-            
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-              <a class="nav-link" href="login.html"> Iniciar Sesión</a>
-              </li>
-            </ul>
-                
+            </ul>                
 
         </div>
       </nav>
-    
 
-  <header>
+  <div class="content-box">
+
+    <div id="titulo">Iniciar sesión</div>
+    <hr>
+    <br>
+      <div id="form">
+        <form method="post" action="/login">
+          <input class="input" type="text" name="username" placeholder="Número de socio" required="required" autofocus="autofocus" autocomplete="on">
+          <br><br>
+          <input class="input" type="text" name="password" placeholder="DNI" min="9" max="9" required="required" autocomplete=”on”>
+          <br>
+          <input class="boton1" type="reset" value="Limpiar">
+          <input class="boton2" type="submit" value="Enviar">
+
+          <br>
+        </form>
+      </div>
     <div>
-      <img src="img/bhinicio.png" alt="imagen de inicio">
-    </div>
-  </header>
 
-  <div id="reservas">
-  	 <div class="deportes">
-  		  <div id="baloncesto">
-  		     <div class="info">
-  		       <p>Baloncesto</p>
-  		     </div>
-  		  </div>
-  		  <div id="padel">
-  		    <div class="info">
-  		       <p>Pádel</p>
-  		    </div>
-  		  </div>
-  		  <div id="squash">
-  		    <div class="info">
-  		       <p>Squash</p>
-  		    </div>
-  		  </div>
-  		  <div id="pingpong">
-  		    <div class="info">
-  		       <p>Ping Pong</p>
-  		    </div>
-  		  </div>
-  		  <div id="futbol">
-  		    <div class="info">
-  		       <p>Fútbol</p>
-  		    </div>    
-  		  </div>
-  		  <div id="tenis">
-  		    <div class="info">
-  		       <p>Tenis</p>
-  		    </div>
-  		  </div>
-  	</div>
   </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
