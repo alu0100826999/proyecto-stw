@@ -3,12 +3,18 @@ img{
   width: 100%;
 }
 
-#header {
+header {
+  padding-bottom: 1px;
+  background-color:#2C3E50;
   background-repeat: repeat;
   width: 100%;
   left: 0;
   top: 0;
-  position: fixed;
+  /*position: fixed;*/
+}
+
+div#reservas{
+  background-color: white;
 }
 
 div.deportes{
@@ -81,47 +87,55 @@ div#tenis:hover div.info{
   visibility:visible;
 }
 
-.content-box {
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-  padding: 20px;
-  background-color: #d8ecf7;
-  border: 1px solid #afcde3;
+div#final ul li {
+
+  display: inline;
+  list-style: none;
+
+ 
+}
+
+div#final ul li a {
+  font-size:30px;
   text-align: center;
-  margin-top: 100px;
-  margin-left: 40%;
-  position: relative;
+  /*background: red;*/ 
 }
 
-#form {
-  width: auto;
-  /*text-align: center;*/
+.fa-facebook-official {
+  background: #3b5999;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-#titulo {
-  font-size: 30px;
+.fa-twitter {
+  background: #55acee;
+  padding-right: 4px;
+  padding-left: 4px; 
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-hr {
-  width: 100%;
-  background-color: black;
+.fa-instagram {
+  background: #e4405f;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-.boton2, .boton1{ 
-  margin: 28px 20px;
-  background-color:#EBEBEB;
-  text-align: center;
-  width:75px;
-  height:28px;
-  color: grey;
+div#final p {
+  font-family:cursive;
+  padding-left:38px;
 }
 
-footer{
+footer {
 	background:#2c3e50;
-	color:#fff;
+	/*color:#fff;
 	padding-top: 1%;
 	padding-bottom: 5%;
-	margin-top:1%;
-
+	margin-top:1%;*/
 }

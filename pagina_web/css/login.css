@@ -1,0 +1,44 @@
+header {
+  padding-bottom: 1px;
+  background-color:#2C3E50;
+}
+
+.content-box {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #d8ecf7;
+  border: 1px solid #afcde3;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 43%;
+  /*position: relative;*/
+}
+
+#form {
+  width: auto;
+  /*text-align: center;*/
+}
+
+#titulo {
+  font-size: 30px;
+}
+
+hr {
+  width: 100%;
+  background-color: black;
+}
+
+.boton2, .boton1{ 
+  margin: 28px 20px;
+  background-color:#EBEBEB;
+  text-align: center;
+  width:75px;
+  height:28px;
+  color: grey;
+}
+
+footer {
+	margin-top: 300px;
+}
