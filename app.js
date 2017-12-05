@@ -181,6 +181,5 @@ app.get('/logout', function (req, res) {
 var server = app.listen(process.env.PORT || 8080, ()=> {
   var host = server.address().address
   var port = server.address().port
-
   console.log('Conectado al puerto 8087')
 })
