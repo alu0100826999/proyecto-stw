@@ -172,14 +172,15 @@ app.post('/login', function(req, res) {
 });
 
 //Borra la sesion.
-  app.get('/logout', function (req, res) {
-    req.session.destroy();
-    res.render('pagina_web/index' );
-  });
+app.get('/logout', function (req, res) {
+  req.session.destroy();
+  res.render('pagina_web/index' );
+});
 
 
-var server = app.listen(process.env.PORT || 8080, function () {
-var host = server.address().address
-var port = server.address().port
-console.log('Escuchando at http://%s:%s', host, port)
+var server = app.listen(process.env.PORT || 8080, ()=> {
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log('Conectado al puerto 8087')
 })
