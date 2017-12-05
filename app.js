@@ -66,7 +66,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
-	res.render('pagina_web/index', {title: 'Express'});
+	res.render('pagina_web/index');
 })
 
 //Muestra la vista con el formulario para log in
@@ -174,7 +174,7 @@ app.post('/login', function(req, res) {
 //Borra la sesion.
 app.get('/logout', function (req, res) {
   req.session.destroy();
-  res.render('pagina_web/index' );
+  res.render('pagina_web/index');
 });
 
 
