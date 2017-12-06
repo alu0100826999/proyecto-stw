@@ -18,6 +18,8 @@
   
   <body>
   
+  <!-- de momento la cabecera la dejo porque la suelo usar mucho para navegar y ver lo de iniciar sesion y todo, mas adelante si quieren la quitan -->
+    <!-- navbar-expand-lg navbar-dark bg-dark id="header"-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark navbar-toggler-sm pt-3 pb-3" >
                
@@ -31,34 +33,42 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div class="navbar-nav text-center">
-            <a class="nav-item nav-link" href="/#reserva"> Reserva tu cancha</a>
-            <a class="nav-item nav-link" href="/#contacto"> Contacto</a>
+            <a class="nav-item nav-link" href="#reservas"> Reserva tu cancha</a>
+            <a class="nav-item nav-link" href="#contacto"> Contacto</a>
+            <a class="nav-item nav-link" href="login"> Iniciar Sesión</a>
+            <a class="nav-item nav-link" href="registrar"> Registrar</a>
           </div>
         </div>
 
       </nav>
     </header>
 
-    <div class="content-box">
+    <div id="formulario">
 
-      <div id="titulo">Iniciar sesión</div>
-        <hr>
-        <br>
-        <div id="form">
-          <form method="post" action="/login">
-            <input class="input" type="number" name="username" placeholder="Número de socio" required="required" autofocus="autofocus" autocomplete="on">
-            <br><br>
-            <input class="input" type="text" name="password" placeholder="DNI" min="9" max="9" required="required" autocomplete=”on”>
-            <br>
-            <input class="boton1" type="reset" value="Limpiar">
-            <input class="boton2" type="submit" value="Enviar">
-
-            <br>
-          </form>
+      <div id="logo">
+        <div>
+          <a title="Volver a inicio" href="index.html"><img src="./views/pagina_web/img/logo.png" alt="Volver a inicio"></img></a>
         </div>
-      <div>
+      </div>
 
-    </div>
+      <div id="form">
+        <hr>
+        <h2>Iniciar sesión</h2>
+        <hr>
+
+        <form method="post" action="/login">
+
+          <input class="input" type="number" name="username" placeholder="Número de socio" required="required" autofocus="autofocus" autocomplete="on">
+          <input class="input" type="text" name="password" placeholder="DNI" min="9" max="9" required="required" autocomplete=”on”>
+          <hr>
+          <input class="boton1" type="reset" value="Limpiar">
+          <input class="boton2" type="submit" value="Enviar">
+          <hr>
+          <a href="/">Volver a página de inicio</a> 
+              
+        </form>
+      </div>
+
     </div>
 
     <!--class="container-fluid bg-dark pt-3 pb-3 text-white text-center">-->

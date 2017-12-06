@@ -6,10 +6,10 @@ img{
 header {
   padding-bottom: 1px;
   background-color:#2C3E50;
-  background-repeat: repeat;
+  /*background-repeat: repeat;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 0;*/
   /*position: fixed;*/
 }
 
@@ -55,16 +55,17 @@ div#tenis{
   background-image: url("../img/tenis.jpg");
 }
 
-div.info{
+div.info {
+  justify-content:center;
+  align-items:center;
   height:350px;
   width:350px;
-  background: #2A0A22;
+  background: #2C3E50;
   color: white;
   font-size:50px;
   text-align:center;
   visibility:hidden;
   filter:opacity(0.8);
-  /*transition: all 0.5s ease 0.5s;*/
 }
 
 

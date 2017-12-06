@@ -3,7 +3,7 @@ header {
   background-color:#2C3E50;
 }
 
-.content-box {
+/*.content-box {
   height: 300px;
   width: 300px;
   overflow: hidden;
@@ -13,16 +13,33 @@ header {
   text-align: center;
   margin-top: 100px;
   margin-left: 43%;
-  /*position: relative;*/
+}*/
+
+div#formulario{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  flex-wrap:wrap;
 }
 
-#form {
-  width: auto;
-  /*text-align: center;*/
+div#logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:row;
+  flex-wrap:wrap;
+  background: #42678C;
+  height:80px;
+  width:350px;
 }
 
-#titulo {
-  font-size: 30px;
+div#form {
+  height:350px;
+  width:350px;
+  background: #42678C;
+  color: white;
+  text-align:center;
 }
 
 hr {
@@ -36,7 +53,7 @@ hr {
   text-align: center;
   width:75px;
   height:28px;
-  color: grey;
+  color: #666666;
 }
 
 footer {
