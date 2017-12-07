@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 //permite coger parámetros de la url(query string)
 app.use(bodyParser.urlencoded({ extended: false }));
 
-mongoose.connect('mongodb://127.0.0.1/usersbh', function(error){
+mongoose.connect('mongodb://127.0.0.1/usersbh, 127.0.0.1:2500/?replicaSet=test&connectTimeoutM', function(error){
   if (error) {
     throw error; 
   } else {
