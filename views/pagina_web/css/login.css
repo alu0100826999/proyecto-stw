@@ -21,6 +21,7 @@ div#formulario{
   align-items:center;
   flex-direction:column;
   flex-wrap:wrap;
+  margin-top: 100px;
 }
 
 div#logo{
