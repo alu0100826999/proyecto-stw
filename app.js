@@ -10,9 +10,11 @@ var mongoose = require('mongoose');
 //permite coger parámetros de la url(query string)
 app.use(bodyParser.urlencoded({ extended: false }));
 
-mongoose.connect('mongodb://127.0.0.1/usersbh', function(error){
+var url_mlab = 'mongodb://alu0100826999:a_rivares18@ds135186.mlab.com:35186/usersbh'
+
+mongoose.connect('mongodb://localhost:27017/usersbh' || url_mlab || process.env.MONGOLAB_URI, function(error){
   if (error) {
-    throw error; 
+    throw error;
   } else {
     console.log('Conectado a MongoDB');
   }
