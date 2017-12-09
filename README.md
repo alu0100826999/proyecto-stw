@@ -1,10 +1,6 @@
 # PROYECTO FINAL SISTEMAS Y TECNOLOGÍAS WEB
 
-## Nuevo enlace para la visualización de la página (por medio del iaas de Andrea):
-
-* [Enlace](http://10.6.129.53:8080/)
-
-## Enlace a la página (Heroku):
+# Enlace a la página (Heroku):
 
 * [Heroku](https://bh-reservas.herokuapp.com/)
 
