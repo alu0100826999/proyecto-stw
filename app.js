@@ -10,8 +10,8 @@ var mongoose = require('mongoose');
 //permite coger parámetros de la url(query string)
 app.use(bodyParser.urlencoded({ extended: false }));
 
-//var url_mlab = 'mongodb://alu0100826999:a_rivares18@ds135186.mlab.com:35186/usersbh'
-//mongoose.connect(url_mlab, function(error){
+var url_mlab = 'mongodb://alu0100826999:a_rivares18@ds135186.mlab.com:35186/usersbh'
+mongoose.connect(url_mlab, function(error){
 
 // Para conectar mediante heroku con la base de datos en mlab:
 mongoose.connect(process.env.MONGOLAB_URI, function(error) {
