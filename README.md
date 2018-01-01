@@ -4,7 +4,7 @@
 
 * [Heroku](https://bh-reservas.herokuapp.com/)
 
-## TUTORIAL
+## TUTORIAL:
 
 ### Para tener a punto el repo:
 1. git clone URL
