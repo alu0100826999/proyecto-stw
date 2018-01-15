@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //mongoose.connect(url_mlab, function(error){
 
 // Para conectar mediante heroku con la base de datos en mlab:
-//mongoose.connect(process.env.MONGOLAB_URI, function(error) {
+mongoose.connect(process.env.MONGOLAB_URI, function(error) {
 
 // Para conectar localmente con la base de datos local:
-mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
+//mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
   if (error) {
     throw error;
   } else {
