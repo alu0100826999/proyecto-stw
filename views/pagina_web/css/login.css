@@ -3,17 +3,7 @@ header {
   background-color:#2C3E50;
 }
 
-/*.content-box {
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-  padding: 20px;
-  background-color: #d8ecf7;
-  border: 1px solid #afcde3;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 43%;
-}*/
+/*-----Login---------*/
 
 div#formulario{
   display:flex;
@@ -21,7 +11,6 @@ div#formulario{
   align-items:center;
   flex-direction:column;
   flex-wrap:wrap;
-  margin-top: 100px;
 }
 
 div#logo{
@@ -30,33 +19,15 @@ div#logo{
   align-items:center;
   flex-direction:row;
   flex-wrap:wrap;
-  background: #42678C;
+  background: #2C3E50;
   height:80px;
   width:350px;
 }
-
 div#form {
   height:350px;
   width:350px;
-  background: #42678C;
+  background: #2C3E50;
   color: white;
   text-align:center;
 }
-
-hr {
-  width: 100%;
-  background-color: black;
-}
-
-.boton2, .boton1{ 
-  margin: 28px 20px;
-  background-color:#EBEBEB;
-  text-align: center;
-  width:75px;
-  height:28px;
-  color: #666666;
-}
-
-footer {
-	margin-top: 300px;
-}
+/*-----Login---------*/

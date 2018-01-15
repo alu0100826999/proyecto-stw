@@ -3,22 +3,14 @@ img{
   width: 100%;
 }
 
-header {
+header{
   padding-bottom: 1px;
   background-color:#2C3E50;
- 
- /*
- background-repeat: repeat;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: fixed;
- */
+
 }
 
 div#reservas{
   background-color: white;
-  margin-top: 100px;
 }
 
 div.deportes{
@@ -37,8 +29,9 @@ div.deportes > div{
   justify-content:center;
   flex-direction:row;
   flex-wrap:wrap;
-  
 }
+
+
 
 div#baloncesto{
   background-image: url("../img/baloncesto.jpg");
@@ -59,7 +52,7 @@ div#tenis{
   background-image: url("../img/tenis.jpg");
 }
 
-div.info {
+div.info{
   justify-content:center;
   align-items:center;
   height:350px;
@@ -92,38 +85,42 @@ div#tenis:hover div.info{
   visibility:visible;
 }
 
-div#final ul li {
+
+div#final ul li{
 
   display: inline;
   list-style: none;
-
- 
 }
 
-div#final ul li a {
+div#final ul li a{
+
   font-size:30px;
   text-align: center;
-  /*background: red;*/ 
 }
 
-.fa-facebook-official {
+.fa-facebook-official{
   background: #3b5999;
   padding-right: 6px;
   padding-left: 6px;
+
   margin-right: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
-.fa-twitter {
+.fa-twitter{
+
   background: #55acee;
+
   padding-right: 4px;
-  padding-left: 4px; 
+  padding-left: 4px;
+  
   padding-top: 2px;
   padding-bottom: 2px;
+
 }
 
-.fa-instagram {
+.fa-instagram{
   background: #e4405f;
   padding-right: 5px;
   padding-left: 5px;
@@ -132,15 +129,14 @@ div#final ul li a {
   padding-bottom: 2px;
 }
 
-div#final p {
+div#final p{
   font-family:cursive;
   padding-left:38px;
+
 }
 
-footer {
-	background:#2c3e50;
-	/*color:#fff;
-	padding-top: 1%;
-	padding-bottom: 5%;
-	margin-top:1%;*/
+footer{
+  /*#9A12B3*/
+	background:#2C3E50;
 }
+
