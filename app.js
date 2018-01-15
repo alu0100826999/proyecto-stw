@@ -17,14 +17,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 mongoose.connect(process.env.MONGOLAB_URI, function(error) {
 
 // Para conectar localmente con la base de datos local:
-/*mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
+//mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
   if (error) {
     throw error;
   } else {
     console.log('Conectado a MongoDB');
   }
 });
-*/
+
 // This is our mongoose model for todos
 var Schema = mongoose.Schema({
     usuario: Number,
