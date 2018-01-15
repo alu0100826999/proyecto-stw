@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //mongoose.connect(url_mlab, function(error){
 
 // Para conectar mediante heroku con la base de datos en mlab:
-mongoose.connect(process.env.MONGOLAB_URI, function(error) {
+//mongoose.connect(process.env.MONGOLAB_URI, function(error) {
 
 // Para conectar localmente con la base de datos local:
-//mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
+mongoose.connect('mongodb://localhost:27017/usersbh', function(error){
   if (error) {
     throw error;
   } else {
@@ -83,6 +83,34 @@ app.get('/login', function(req, res){
 
 app.get('/registrar', function(req, res){
   res.render('pagina_web/registrar')
+})
+
+app.get('/contacto', function(req, res){
+  res.render('pagina_web/contacto')
+})
+
+app.get('/baloncesto', function(req, res){
+  res.render('pagina_web/baloncesto')
+})
+
+app.get('/futbol', function(req, res){
+  res.render('pagina_web/futbol')
+})
+
+app.get('/padel', function(req, res){
+  res.render('pagina_web/padel')
+})
+
+app.get('/pingpong', function(req, res){
+  res.render('pagina_web/pingpong')
+})
+
+app.get('/squash', function(req, res){
+  res.render('pagina_web/squash')
+})
+
+app.get('/tenis', function(req, res){
+  res.render('pagina_web/tenis')
 })
 
 var registrar = function (user, pass) {
