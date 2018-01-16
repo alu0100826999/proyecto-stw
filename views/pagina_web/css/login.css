@@ -3,9 +3,8 @@ header {
   background-color:#2C3E50;
 }
 
-/*-----Login---------*/
-
 div#formulario{
+  margin-top: 150px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -24,10 +23,9 @@ div#logo{
   width:350px;
 }
 div#form {
-  height:350px;
+  height:280px;
   width:350px;
   background: #2C3E50;
   color: white;
   text-align:center;
 }
-/*-----Login---------*/

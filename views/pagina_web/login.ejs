@@ -17,14 +17,13 @@
   </head>
   
   <body>
-  
-  <!-- de momento la cabecera la dejo porque la suelo usar mucho para navegar y ver lo de iniciar sesion y todo, mas adelante si quieren la quitan -->
+
     <!-- navbar-expand-lg navbar-dark bg-dark id="header"-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark navbar-toggler-sm pt-3 pb-3" >
                
         <div class="navbar-header">
-          <a class="navbar-brand" href="/"> BH-RESERVAS </a>     
+          <a class="navbar-brand" href="index"> BH-RESERVAS </a>     
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +32,9 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div class="navbar-nav text-center">
-            <a class="nav-item nav-link" href="login"> Iniciar Sesión</a>
-            <a class="nav-item nav-link" href="contacto.html"> Contacto</a>
-            <a class="nav-item nav-link" href="/"> Reserva tu cancha</a>
-          </div>
+            <a class="nav-item nav-link" href="index"> Reserva tu cancha</a>
+            <a class="nav-item nav-link" href="contacto"> Contacto</a>
+           </div>
         </div>
 
       </nav>
@@ -46,7 +44,7 @@
 
       <div id="logo">
         <div>
-          <a title="Volver a inicio" href="index.html"><img src="./views/pagina_web/img/logo.png" alt="Volver a inicio"></img></a>
+          <a title="Volver a inicio" href="index"><img src="./views/pagina_web/img/logo.png" alt="Volver a inicio"></img></a>
         </div>
       </div>
 
@@ -55,16 +53,14 @@
         <h2>Iniciar sesión</h2>
         <hr>
 
-        <form method="post" action="/login">
+        <form method="post" action="login">
 
           <input class="input" type="number" name="username" placeholder="Número de socio" required="required" autofocus="autofocus" autocomplete="on">
-          <input class="input" type="text" name="password" placeholder="DNI" min="9" max="9" required="required" autocomplete=”on”>
+          <input class="input" type="text" name="password" placeholder="DNI" pattern="[0-8]{8}" required="required" autocomplete=”on”>
           <hr>
           <input class="boton1" type="reset" value="Limpiar">
           <input class="boton2" type="submit" value="Enviar">
-          <hr>
-          <a href="/">Volver a página de inicio</a> 
-              
+                               
         </form>
       </div>
 

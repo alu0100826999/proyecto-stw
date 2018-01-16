@@ -53,11 +53,13 @@ var auth = function(req, res, next) {
         if (req.session) {
           return next();
         } else {
-          return res.sendStatus(401);
+//          return res.sendStatus(401);
+            res.render('pagina_web/login');
         }
 
       } else {
-        return res.sendStatus(401);
+//        return res.sendStatus(401);
+	  res.render('pagina_web/login');
       }
 
     }
@@ -73,8 +75,12 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
-	res.render('pagina_web/index');
+	res.render('pagina_web/login');
 })
+
+app.get('/index', auth, function (req, res) {
+        res.render('pagina_web/index');
+});
 
 //Muestra la vista con el formulario para log in
 app.get('/login', function(req, res){
@@ -89,29 +95,35 @@ app.get('/contacto', function(req, res){
   res.render('pagina_web/contacto')
 })
 
-app.get('/baloncesto', function(req, res){
+app.get('/baloncesto',auth, function(req, res){
   res.render('pagina_web/baloncesto')
 })
 
-app.get('/futbol', function(req, res){
+app.get('/futbol',auth, function(req, res){
   res.render('pagina_web/futbol')
 })
 
-app.get('/padel', function(req, res){
+app.get('/padel', auth, function(req, res){
   res.render('pagina_web/padel')
 })
 
-app.get('/pingpong', function(req, res){
+app.get('/pingpong', auth, function(req, res){
   res.render('pagina_web/pingpong')
 })
 
-app.get('/squash', function(req, res){
+app.get('/squash', auth, function(req, res){
   res.render('pagina_web/squash')
 })
 
-app.get('/tenis', function(req, res){
+app.get('/tenis', auth, function(req, res){
   res.render('pagina_web/tenis')
 })
+
+//Borra la sesion.
+app.get('/logout', function (req, res) {
+  req.session.destroy();
+  res.render('pagina_web/login');
+});
 
 var registrar = function (user, pass) {
 
