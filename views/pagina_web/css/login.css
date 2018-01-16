@@ -4,7 +4,6 @@ header {
 }
 
 div#formulario{
- /* margin-top: 150px;*/
   display:flex;
   justify-content:center;
   align-items:center;
