@@ -9,6 +9,7 @@ div#formulario{
   align-items:center;
   flex-direction:column;
   flex-wrap:wrap;
+  margin: 10px;
 }
 
 div#logo{
