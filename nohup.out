@@ -1,2 +1,64 @@
 Conectado al puerto 8087
 Conectado a MongoDB
+Conectado al puerto 8083
+Conectado a MongoDB
+
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+DisconnectedError: Ran out of retries trying to reconnect to "localhost:27017". Try setting `server.reconnectTries` and `server.reconnectInterval` to something higher.
+    at MongooseError.DisconnectedError (/home/usuario/STW/proyecto-stw/node_modules/mongoose/lib/error/disconnected.js:21:11)
+    at null.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:64:31)
+    at emitOne (events.js:82:20)
+    at emit (events.js:169:7)
+    at null.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:319:16)
+    at emitOne (events.js:77:13)
+    at emit (events.js:169:7)
+    at null.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:317:16)
+    at emitTwo (events.js:87:13)
+    at emit (events.js:172:7)
+    at Socket.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:177:49)
+    at Socket.g (events.js:260:16)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1256:8)
+    at nextTickCallbackWith2Args (node.js:441:9)
+Conectado al puerto 8083
+
+/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb/lib/server.js:267
+        process.nextTick(function() { throw err; })
+                                      ^
+MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connect ECONNREFUSED 127.0.0.1:27017]
+    at null.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/topologies/server.js:328:35)
+    at emitOne (events.js:77:13)
+    at emit (events.js:169:7)
+    at null.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+    at g (events.js:260:16)
+    at emitTwo (events.js:87:13)
+    at emit (events.js:172:7)
+    at Socket.<anonymous> (/home/usuario/STW/proyecto-stw/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:177:49)
+    at Socket.g (events.js:260:16)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1256:8)
+    at nextTickCallbackWith2Args (node.js:441:9)
+    at process._tickCallback (node.js:355:17)
+mongod --help for help and startup options
+2018-01-22T20:37:40.421+0000 [initandlisten] MongoDB starting : pid=2204 port=27017 dbpath=/data/db 64-bit host=lubuntu-1604
+2018-01-22T20:37:40.421+0000 [initandlisten] db version v2.6.10
+2018-01-22T20:37:40.421+0000 [initandlisten] git version: nogitversion
+2018-01-22T20:37:40.421+0000 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-01-22T20:37:40.421+0000 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2018-01-22T20:37:40.421+0000 [initandlisten] allocator: tcmalloc
+2018-01-22T20:37:40.421+0000 [initandlisten] options: {}
+2018-01-22T20:37:40.435+0000 [initandlisten] journal dir=/data/db/journal
+2018-01-22T20:37:40.435+0000 [initandlisten] recover : no journal files present, no recovery needed
+2018-01-22T20:37:40.465+0000 [initandlisten] waiting for connections on port 27017
+2018-01-22T20:37:40.562+0000 [initandlisten] connection accepted from 127.0.0.1:37886 #1 (1 connection now open)
+2018-01-22T20:37:52.876+0000 [conn1] end connection 127.0.0.1:37886 (0 connections now open)
+2018-01-22T20:38:40.477+0000 [clientcursormon] mem (MB) res:65 virt:540
+2018-01-22T20:38:40.477+0000 [clientcursormon]  mapped (incl journal view):320
+2018-01-22T20:38:40.477+0000 [clientcursormon]  connections:0
+2018-01-22T20:43:40.492+0000 [clientcursormon] mem (MB) res:65 virt:540
+2018-01-22T20:43:40.492+0000 [clientcursormon]  mapped (incl journal view):320
+2018-01-22T20:43:40.492+0000 [clientcursormon]  connections:0
